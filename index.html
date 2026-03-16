@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Morpion</title>
+  <link rel="stylesheet" href="./asset/css/style.css" />
+</head>
+
+<body>
+
+  <h1><img src="./asset/img/tittre2.png" alt="ton titre"></h1>
+
+  <div id="selection-mode">
+    <div class="groupe-boutons">
+      <button id="btn-puissance4" class="btn active" onclick="changerTypeJeu('puissance4')">Puissance 4</button>
+      <button id="btn-morpion" class="btn" onclick="changerTypeJeu('morpion')">Morpion</button>
+    </div>
+    <div class="groupe-boutons">
+      <button class="btn active" id="btn-jvj" onclick="changerMode('jvj')">Joueur VS Joueur</button>
+      <button class="btn" id="btn-jvo" onclick="changerMode('jvo')">Joueur VS Ordi</button>
+    </div>
+  </div>
+
+  <div class="taille-controls">
+    <input type="number" id="largeur" value="7" min="2" max="10">Largeur</imput>
+    <input type="number" id="hauteur" value="6" min="2" max="10">Hauteur</imput>
+    <button id="btnTaille" class="btn">Appliquer</button>
+  </div>
+
+  <div id="grille"></div>
+
+  <div id="message"></div>
+  <button class="btn" id="btn-rejouer" onclick="reinitialiser()">Rejouer</button>
+
+  <script src="./asset/js/script2.js"></script>
+</body>
+
+</html>
